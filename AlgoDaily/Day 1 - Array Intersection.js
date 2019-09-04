@@ -1,3 +1,5 @@
+// Problem description at: https://algodaily.com/challenges/array-intersection
+
 function intersection(arr1, arr2) {
     const numberDict = {};
     const finalArray = [];
@@ -28,3 +30,11 @@ function intersection(arr1, arr2) {
     console.log(finalArray);
     return finalArray;
 }
+
+// Test cases: 
+
+console.log(intersection([6, 0, 12, 10, 16], [3, 15, 18, 20, 15])); // []
+console.log(intersection([1, 5, 2, 12, 6], [13, 10, 9, 5, 8])); // [5]
+console.log(intersection([4, 17, 4, 4, 15, 16, 17, 6, 7], [15, 2, 6, 20, 17, 17, 8, 4, 5])); // [ 15, 6, 17, 4 ]
+console.log(intersection([ 3 ],[ 15 ])); // []
+console.log(intersection([ 2,16,8,9 ],[ 14,15,2,20 ])); // [2]
